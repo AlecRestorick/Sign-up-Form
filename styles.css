@@ -157,7 +157,7 @@ form {
 }
 
 .form-row input:focus{
-    box-shadow: 2px 2px 2px skyblue;
+    border:2px solid rgb(0, 183, 255);
 }
 
 .form-row.password-row {
