@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="font-face" href="fonts/webfontkit-20241120-092814/stylesheet.css">
-    <link rel="font-face" href="fonts/webfontkit-20241121-085835/stylesheet.css">
     <title>Sign-Up-Form</title>
 </head>
 <body>
     <div class="container">
         <div class="left-section">
-            <img src="/Sign-up-Form/Images/Mimosa_tenuiflora_—_João_de_Deus_Medeiros_003.jpg" alt="Mimosa_tenuiflora—João_de_Deus_Medeiros" loading="lazy">
+            <img src="images/Mimosa_tenuiflora_—_João_de_Deus_Medeiros_003.jpg" alt="Mimosa_tenuiflora—João_de_Deus_Medeiros" loading="lazy">
             <div class="overlay">
                 <h1>AMAZONIA</h1>
             </div>
@@ -29,14 +27,14 @@
                         <h2>Sign up</h2>
                     </div>
                 <div class='form-row'>
-                    <label for="first-name">First Name *</i>
-                    </label>
+                    <label for="first-name">First Name *</label>
                     <input 
                         type="text" 
                         name="first-name" 
                         id="first-name" 
                         required 
                         autocomplete="first-name" 
+                        aria-label="First name"
                         aria-required="true"
                         aria-describedby="first-name-error"
                         aria-invalid="false" 
@@ -52,6 +50,7 @@
                     id="last-name" 
                     required 
                     autocomplete="family-name" 
+                    aria-label="Last name"
                     aria-required="true"
                     aria-describedby="last-name-error"
                     aria-invalid="false"
@@ -66,6 +65,8 @@
                     name="email" 
                     id="email" 
                     required 
+                    autocomplete="email" 
+                    aria-label="Email"
                     aria-required="true"
                     aria-describedby="email-error"
                     aria-invalid="false"
@@ -79,7 +80,8 @@
                     name="phone-number" 
                     id="phone-number" 
                     required 
-                    autocomplete="phone-number";
+                    autocomplete="phone-number"
+                    aria-label="Phone number"
                     aria-required="true"
                     aria-describedby="phone-number-error"
                     aria-invalid="false"
@@ -94,13 +96,13 @@
                     name="password" 
                     id="password" 
                     required 
+                    aria-label="Password"
                     aria-required="true" 
                     aria-describedby="password-error password-requirements"
                     aria-invalid="false"
                     minlength="6"
                     pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[-@$!%*?&])[A-Za-z\d@$!%*?&-]{6,}$" >
                     <span id="password-error" class="error-message" role="alert"></span>
-                    </span>
                 </div>
                 <div class='form-row password-row'>   
                     <label for="confirm-password">Confirm Password *</label>
@@ -109,6 +111,7 @@
                     name="confirm-password" 
                     id="confirm-password" 
                     required 
+                    aria-label="Confirm Password"
                     aria-required="true" 
                     aria-describedby="confirm-password-error"
                     aria-invalid="false"
@@ -120,7 +123,7 @@
 
                 <div class="form-footer">
                 <div class='form-row'>
-                    <button type="submit" aria-label="Create Account"></i>Create Account</button>
+                    <button type="submit" aria-label="Create Account">Create Account</button>
                 </div>
                 <div class='form-row'>
                     <p>Already have an account? <a href="#" aria-label="Log in to existing account">Log in</a></p>
