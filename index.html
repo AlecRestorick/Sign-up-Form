@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="font-face" href="/fonts/webfontkit-20241120-092814/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Sign-Up-Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <img src="/Sign-up-Form/Images/Mimosa_tenuiflora_—_João_de_Deus_Medeiros_003.jpg" alt="Mimosa_tenuiflora—João_de_Deus_Medeiros" loading="lazy">
+            <div class="overlay">
+                <h1>AMAZONIA</h1>
+            </div>
+            <div class="overlayCaption">
+        <figcaption><i>Photo By João Medeiros - Wikimedia</i></figcaption>
+        </div>
+        </div>
+        <div class="right-section">
+            <form action="" method="post">
+                <div class="form-header">
+                <h2>We bring The Lungs of the Earth to your Doorstep!</h2>
+                </div>
+                <div class="form-inputs">
+                    <div class="form-row-heading">
+                        <h2>Sign up</h2>
+                    </div>
+                <div class='form-row'>
+                    <label for="first-name">First Name *</i>
+                    </label>
+                    <input 
+                        type="text" 
+                        name="first-name" 
+                        id="first-name" 
+                        required 
+                        autocomplete="first-name" 
+                        aria-required="true"
+                        aria-describedby="first-name-error"
+                        aria-invalid="false" 
+                        minlength="1"
+                        placeholder="Enter your first name">
+                        <span id="first-name-error" class="error-message" role="alert"></span>
+                </div> 
+                <div class='form-row'>
+                    <label for="last-name">Last Name *</label>
+                    <input 
+                    type="text" 
+                    name="last-name" 
+                    id="last-name" 
+                    required 
+                    autocomplete="family-name" 
+                    aria-required="true"
+                    aria-describedby="last-name-error"
+                    aria-invalid="false"
+                    minlength="1"
+                    placeholder="Enter your last name">
+                    <span id="last-name-error" class="error-message" role="alert"></span>
+                </div>
+                <div class='form-row'>   
+                    <label for="email">Email *</label>
+                    <input 
+                    type="email" 
+                    name="email" 
+                    id="email" 
+                    required 
+                    aria-required="true"
+                    aria-describedby="email-error"
+                    aria-invalid="false"
+                    placeholder="example@domain.com">
+                    <span id="email-error" class="error-message" role="alert"></span>
+                </div>
+                <div class='form-row'>   
+                    <label for="phone-number">Phone Number *</label>
+                    <input 
+                    type="tel" 
+                    name="phone-number" 
+                    id="phone-number" 
+                    required 
+                    autocomplete="phone-number";
+                    aria-required="true"
+                    aria-describedby="phone-number-error"
+                    aria-invalid="false"
+                    pattern="^\d{10}$"
+                    placeholder="10-digit phone number">
+                    <span id="phone-number-error" class="error-message" role="alert"></span>
+                </div> 
+                <div class='form-row password-row'>   
+                    <label for="password">Password *</label>
+                    <input 
+                    type="password" 
+                    name="password" 
+                    id="password" 
+                    required 
+                    aria-required="true" 
+                    aria-describedby="password-error password-requirements"
+                    aria-invalid="false"
+                    minlength="6"
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[-@$!%*?&])[A-Za-z\d@$!%*?&-]{6,}$" >
+                    <span id="password-error" class="error-message" role="alert"></span>
+                    </span>
+                </div>
+                <div class='form-row password-row'>   
+                    <label for="confirm-password">Confirm Password *</label>
+                    <input 
+                    type="password" 
+                    name="confirm-password" 
+                    id="confirm-password" 
+                    required 
+                    aria-required="true" 
+                    aria-describedby="confirm-password-error"
+                    aria-invalid="false"
+                    minlength="6"
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$" >
+                    <span id="confirm-password-error" class="error-message" role="alert"></span>
+                </div>
+                </div>
+
+                <div class="form-footer">
+                <div class='form-row'>
+                    <button type="submit" aria-label="Create Account"></i>Create Account</button>
+                </div>
+                <div class='form-row'>
+                    <p>Already have an account? <a href="#" aria-label="Log in to existing account">Log in</a></p>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+
+<script src="./script.js"></script>
+</body>
+</html>
